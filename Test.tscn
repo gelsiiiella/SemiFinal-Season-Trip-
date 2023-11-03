@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://hjsyhg81c70d"]
+
+[ext_resource type="MeshLibrary" uid="uid://s8fhrwrxtdqt" path="res://Buildings.tres" id="1_c41ov"]
+[ext_resource type="MeshLibrary" uid="uid://b1a36nlbes8jm" path="res://Meshlibrary/Roads.tres" id="2_ca4mg"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qpj8i"]
+
+[sub_resource type="Sky" id="Sky_fodcr"]
+sky_material = SubResource("ProceduralSkyMaterial_qpj8i")
+
+[sub_resource type="Environment" id="Environment_b11ys"]
+background_mode = 2
+background_energy_multiplier = 1.51
+sky = SubResource("Sky_fodcr")
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_6y5yt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sky" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_b11ys")
+camera_attributes = SubResource("CameraAttributesPractical_6y5yt")
+
+[node name="Buildings" type="GridMap" parent="Sky"]
+mesh_library = ExtResource("1_c41ov")
+cell_size = Vector3(1, 1, 1)
+cell_scale = 15.0
+data = {
+"cells": PackedInt32Array(65479, 12, 44, 65473, 14, 1441839, 65456, 14, 45, 65428, 16, 12)
+}
+
+[node name="Roads" type="GridMap" parent="."]
+mesh_library = ExtResource("2_ca4mg")
+cell_size = Vector3(1, 1, 1)
+cell_scale = 15.0
+data = {
+"cells": PackedInt32Array(65479, 65535, 64, 65465, 65535, 64, 65478, 14, 64, 65465, 14, 64, 65450, 12, 1441856, 65435, 12, 1441856, 65450, 65535, 1441856, 65435, 65535, 1441856, 65420, 65535, 1441856, 65409, 14, 1441856, 65444, 26, 1441856, 65458, 26, 1441856, 65408, 65535, 1441856, 65408, 9, 1441856, 65408, 14, 1441856, 65393, 65520, 1048589, 65408, 65520, 655397, 65408, 65505, 1048636, 65423, 65520, 60, 65438, 65520, 60, 65453, 65520, 17, 65467, 65520, 60, 65479, 65520, 60, 65408, 65490, 1441852, 65393, 65535, 1441852, 65393, 14, 1441852)
+}

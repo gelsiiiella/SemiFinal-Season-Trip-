@@ -1,0 +1,284 @@
+[gd_scene load_steps=57 format=3 uid="uid://ddmkfwmhqyus6"]
+
+[ext_resource type="ArrayMesh" uid="uid://vt7j6u8t8yoo" path="res://Models/Buildings OBJ format/detail_awning.obj" id="1_vmfjl"]
+[ext_resource type="ArrayMesh" uid="uid://c0cpvog7ocxk6" path="res://Models/Buildings OBJ format/detail_awningWide.obj" id="2_ga4pd"]
+[ext_resource type="ArrayMesh" uid="uid://c4tonshgrhcf0" path="res://Models/Buildings OBJ format/detail_overhang.obj" id="3_y7n20"]
+[ext_resource type="ArrayMesh" uid="uid://bkmk7t3sl236o" path="res://Models/Buildings OBJ format/detail_overhangWide.obj" id="4_7obub"]
+[ext_resource type="ArrayMesh" uid="uid://c21qe45rvmuov" path="res://Models/Buildings OBJ format/detail_umbrella.obj" id="5_dbaq6"]
+[ext_resource type="ArrayMesh" uid="uid://bluuerimcl0et" path="res://Models/Buildings OBJ format/detail_umbrellaDetailed.obj" id="6_isuli"]
+[ext_resource type="ArrayMesh" uid="uid://c6kl3r5t5i2mq" path="res://Models/Buildings OBJ format/large_buildingA.obj" id="7_yo7xk"]
+[ext_resource type="ArrayMesh" uid="uid://cxc8jmatedv72" path="res://Models/Buildings OBJ format/large_buildingB.obj" id="8_ym2wu"]
+[ext_resource type="ArrayMesh" uid="uid://bbqvc661oahgo" path="res://Models/Buildings OBJ format/large_buildingC.obj" id="9_tipf8"]
+[ext_resource type="ArrayMesh" uid="uid://b1300n183wuig" path="res://Models/Buildings OBJ format/large_buildingD.obj" id="10_fbk6w"]
+[ext_resource type="ArrayMesh" uid="uid://6cnq6jabjcyw" path="res://Models/Buildings OBJ format/large_buildingE.obj" id="11_vyrb1"]
+[ext_resource type="ArrayMesh" uid="uid://3eotaug8la1j" path="res://Models/Buildings OBJ format/large_buildingF.obj" id="12_epca6"]
+[ext_resource type="ArrayMesh" uid="uid://c2yu34kig1a8h" path="res://Models/Buildings OBJ format/large_buildingG.obj" id="13_7pw1e"]
+[ext_resource type="ArrayMesh" uid="uid://vlg7wlh48p2g" path="res://Models/Buildings OBJ format/low_buildingA.obj" id="14_spf32"]
+[ext_resource type="ArrayMesh" uid="uid://cbwy7eegxry15" path="res://Models/Buildings OBJ format/low_buildingB.obj" id="15_7tokd"]
+[ext_resource type="ArrayMesh" uid="uid://7wsh4th6igm5" path="res://Models/Buildings OBJ format/low_buildingC.obj" id="16_l1gfc"]
+[ext_resource type="ArrayMesh" uid="uid://bahfefwcr4q3n" path="res://Models/Buildings OBJ format/low_buildingD.obj" id="17_6yj1u"]
+[ext_resource type="ArrayMesh" uid="uid://vu3drnlc1mqe" path="res://Models/Buildings OBJ format/low_buildingE.obj" id="18_n3eov"]
+[ext_resource type="ArrayMesh" uid="uid://jnao1vfg0ml3" path="res://Models/Buildings OBJ format/low_buildingF.obj" id="19_ltiwd"]
+[ext_resource type="ArrayMesh" uid="uid://yb4c8kdbif0q" path="res://Models/Buildings OBJ format/low_buildingG.obj" id="20_wa1rr"]
+[ext_resource type="ArrayMesh" uid="uid://d168lctfglvoh" path="res://Models/Buildings OBJ format/low_buildingH.obj" id="21_gkuy0"]
+[ext_resource type="ArrayMesh" uid="uid://bmuofsc4xugsm" path="res://Models/Buildings OBJ format/low_buildingI.obj" id="22_70ph1"]
+[ext_resource type="ArrayMesh" uid="uid://cop6gdqcfrq7j" path="res://Models/Buildings OBJ format/low_buildingJ.obj" id="23_vvrxj"]
+[ext_resource type="ArrayMesh" uid="uid://fev2fke5pn6l" path="res://Models/Buildings OBJ format/low_buildingK.obj" id="24_fres4"]
+[ext_resource type="ArrayMesh" uid="uid://bp7nksq3e3hc2" path="res://Models/Buildings OBJ format/low_buildingL.obj" id="25_72lvr"]
+[ext_resource type="ArrayMesh" uid="uid://ddjyl55by8fc" path="res://Models/Buildings OBJ format/low_buildingM.obj" id="26_t1dkl"]
+[ext_resource type="ArrayMesh" uid="uid://b6rsebueffnwv" path="res://Models/Buildings OBJ format/low_buildingN.obj" id="27_dih5c"]
+[ext_resource type="ArrayMesh" uid="uid://doq4twce7ke0v" path="res://Models/Buildings OBJ format/low_wideA.obj" id="28_hkwrw"]
+[ext_resource type="ArrayMesh" uid="uid://cc8eanm1naqbh" path="res://Models/Buildings OBJ format/low_wideB.obj" id="29_1x3fj"]
+[ext_resource type="ArrayMesh" uid="uid://fjlq12tsghr4" path="res://Models/Buildings OBJ format/roof_center.obj" id="30_nygtr"]
+[ext_resource type="ArrayMesh" uid="uid://bhkxr1kt6ysfx" path="res://Models/Buildings OBJ format/roof_corner.obj" id="31_26j74"]
+[ext_resource type="ArrayMesh" uid="uid://ctpw6x4ksiwoq" path="res://Models/Buildings OBJ format/roof_overhang.obj" id="32_hcq5a"]
+[ext_resource type="ArrayMesh" uid="uid://cq0av450ob56f" path="res://Models/Buildings OBJ format/roof_side.obj" id="33_uwi35"]
+[ext_resource type="ArrayMesh" uid="uid://dqecrtre6d23q" path="res://Models/Buildings OBJ format/sign_billboard.obj" id="34_i7ddd"]
+[ext_resource type="ArrayMesh" uid="uid://cgxf773xavahb" path="res://Models/Buildings OBJ format/sign_hospital.obj" id="35_b2dyo"]
+[ext_resource type="ArrayMesh" uid="uid://c2gnld2o5sjxg" path="res://Models/Buildings OBJ format/skyscraperA.obj" id="36_wnn7j"]
+[ext_resource type="ArrayMesh" uid="uid://do0jycl56eyim" path="res://Models/Buildings OBJ format/skyscraperB.obj" id="37_ehdet"]
+[ext_resource type="ArrayMesh" uid="uid://bdeb2n56hue5a" path="res://Models/Buildings OBJ format/skyscraperC.obj" id="38_lfr5t"]
+[ext_resource type="ArrayMesh" uid="uid://bmg05oslyqael" path="res://Models/Buildings OBJ format/skyscraperD.obj" id="39_cr6yg"]
+[ext_resource type="ArrayMesh" uid="uid://gpjm3p27huba" path="res://Models/Buildings OBJ format/skyscraperE.obj" id="40_qihjm"]
+[ext_resource type="ArrayMesh" uid="uid://bm6r68khwhi12" path="res://Models/Buildings OBJ format/skyscraperF.obj" id="41_81gcx"]
+[ext_resource type="ArrayMesh" uid="uid://5fso4mrm2sx3" path="res://Models/Buildings OBJ format/small_buildingA.obj" id="42_6bbe1"]
+[ext_resource type="ArrayMesh" uid="uid://3jscqhjom4aj" path="res://Models/Buildings OBJ format/small_buildingB.obj" id="43_prbov"]
+[ext_resource type="ArrayMesh" uid="uid://oh6vo612u4x5" path="res://Models/Buildings OBJ format/small_buildingC.obj" id="44_8ow58"]
+[ext_resource type="ArrayMesh" uid="uid://1rbm74hjbrl5" path="res://Models/Buildings OBJ format/small_buildingD.obj" id="45_7t00r"]
+[ext_resource type="ArrayMesh" uid="uid://dx2pnvoqx44tf" path="res://Models/Buildings OBJ format/small_buildingE.obj" id="46_x4ebk"]
+[ext_resource type="ArrayMesh" uid="uid://de38qrlusd1cj" path="res://Models/Buildings OBJ format/small_buildingF.obj" id="47_u7ykh"]
+[ext_resource type="ArrayMesh" uid="uid://c75cpogaq3y6h" path="res://Models/Buildings OBJ format/wall_doorA.obj" id="48_1qgn7"]
+[ext_resource type="ArrayMesh" uid="uid://b8uh3shrurhac" path="res://Models/Buildings OBJ format/wall_doorB.obj" id="49_cv7t5"]
+[ext_resource type="ArrayMesh" uid="uid://dp45u720f61fk" path="res://Models/Buildings OBJ format/wall_solid.obj" id="50_5vdty"]
+[ext_resource type="ArrayMesh" uid="uid://b1jkiq4auhe2f" path="res://Models/Buildings OBJ format/wall_windowA.obj" id="51_hxgc2"]
+[ext_resource type="ArrayMesh" uid="uid://bfbxqgb3rybjo" path="res://Models/Buildings OBJ format/wall_windowB.obj" id="52_6xpfv"]
+[ext_resource type="ArrayMesh" uid="uid://c8vvnls6lepn8" path="res://Models/Buildings OBJ format/wall_windowC.obj" id="53_w7e4f"]
+[ext_resource type="ArrayMesh" uid="uid://b8xdkxjte50ep" path="res://Models/Buildings OBJ format/wall_windowD.obj" id="54_elvd7"]
+[ext_resource type="ArrayMesh" uid="uid://cwewfu8k45chp" path="res://Models/Buildings OBJ format/wall_windowE.obj" id="55_ibn7v"]
+[ext_resource type="ArrayMesh" uid="uid://qcmd4rkeoqy8" path="res://Models/Buildings OBJ format/wall_windowF.obj" id="56_gr8nk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DetailAwning" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("1_vmfjl")
+
+[node name="DetailAwningWide" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("2_ga4pd")
+
+[node name="DetailOverhang" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("3_y7n20")
+
+[node name="DetailOverhangWide" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("4_7obub")
+
+[node name="DetailUmbrella" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("5_dbaq6")
+
+[node name="DetailUmbrellaDetailed" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("6_isuli")
+
+[node name="LargeBuildingA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("7_yo7xk")
+
+[node name="LargeBuildingB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("8_ym2wu")
+
+[node name="LargeBuildingC" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("9_tipf8")
+
+[node name="LargeBuildingD" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("10_fbk6w")
+
+[node name="LargeBuildingE" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("11_vyrb1")
+
+[node name="LargeBuildingF" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("12_epca6")
+
+[node name="LargeBuildingG" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("13_7pw1e")
+
+[node name="LowBuildingA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("14_spf32")
+
+[node name="LowBuildingB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("15_7tokd")
+
+[node name="LowBuildingC" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("16_l1gfc")
+
+[node name="LowBuildingD" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("17_6yj1u")
+
+[node name="LowBuildingE" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("18_n3eov")
+
+[node name="LowBuildingF" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("19_ltiwd")
+
+[node name="LowBuildingG" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("20_wa1rr")
+
+[node name="LowBuildingH" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("21_gkuy0")
+
+[node name="LowBuildingI" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("22_70ph1")
+
+[node name="LowBuildingJ" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("23_vvrxj")
+
+[node name="LowBuildingK" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("24_fres4")
+
+[node name="LowBuildingL" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("25_72lvr")
+
+[node name="LowBuildingM" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("26_t1dkl")
+
+[node name="LowBuildingN" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("27_dih5c")
+
+[node name="LowWideA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("28_hkwrw")
+
+[node name="LowWideB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("29_1x3fj")
+
+[node name="RoofCenter" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("30_nygtr")
+
+[node name="RoofCorner" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("31_26j74")
+
+[node name="RoofOverhang" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("32_hcq5a")
+
+[node name="RoofSide" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("33_uwi35")
+
+[node name="SignBillboard" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("34_i7ddd")
+
+[node name="SignHospital" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("35_b2dyo")
+
+[node name="SkyscraperA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("36_wnn7j")
+
+[node name="SkyscraperB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("37_ehdet")
+
+[node name="SkyscraperC" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("38_lfr5t")
+
+[node name="SkyscraperD" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("39_cr6yg")
+
+[node name="SkyscraperE" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("40_qihjm")
+
+[node name="SkyscraperF" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("41_81gcx")
+
+[node name="SmallBuildingA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("42_6bbe1")
+
+[node name="SmallBuildingB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("43_prbov")
+
+[node name="SmallBuildingC" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("44_8ow58")
+
+[node name="SmallBuildingD" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("45_7t00r")
+
+[node name="SmallBuildingE" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("46_x4ebk")
+
+[node name="SmallBuildingF" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("47_u7ykh")
+
+[node name="WallDoorA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("48_1qgn7")
+
+[node name="WallDoorB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("49_cv7t5")
+
+[node name="WallSolid" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("50_5vdty")
+
+[node name="WallWindowA" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("51_hxgc2")
+
+[node name="WallWindowB" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("52_6xpfv")
+
+[node name="WallWindowC" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("53_w7e4f")
+
+[node name="WallWindowD" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("54_elvd7")
+
+[node name="WallWindowE" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("55_ibn7v")
+
+[node name="WallWindowF" type="MeshInstance3D" parent="."]
+unique_name_in_owner = true
+mesh = ExtResource("56_gr8nk")
