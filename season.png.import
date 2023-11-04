@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfjot0ayq683g"
-path="res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"
+uid="uid://cqoqu57xucht"
+path="res://.godot/imported/season.png-0edc658f041732067ef30298f056dda4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://button.png"
-dest_files=["res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"]
+source_file="res://season.png"
+dest_files=["res://.godot/imported/season.png-0edc658f041732067ef30298f056dda4.ctex"]
 
 [params]
 

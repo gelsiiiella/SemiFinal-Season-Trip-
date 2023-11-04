@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfjot0ayq683g"
-path="res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"
+uid="uid://bh33347nim1nh"
+path="res://.godot/imported/pause_idle.png-3b89d451c0ba92d07877aaaed88b4bee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://button.png"
-dest_files=["res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"]
+source_file="res://pause_idle.png"
+dest_files=["res://.godot/imported/pause_idle.png-3b89d451c0ba92d07877aaaed88b4bee.ctex"]
 
 [params]
 

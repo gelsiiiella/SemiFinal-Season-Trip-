@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfjot0ayq683g"
-path="res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"
+uid="uid://cfq3wbdd7yqlh"
+path="res://.godot/imported/traffic_signs_bg.png-0dab24f3527dc1913d486812ca798ee4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://button.png"
-dest_files=["res://.godot/imported/button.png-234620e182281afdeb4aab4d2ed4f8a7.ctex"]
+source_file="res://traffic_signs_bg.png"
+dest_files=["res://.godot/imported/traffic_signs_bg.png-0dab24f3527dc1913d486812ca798ee4.ctex"]
 
 [params]
 
