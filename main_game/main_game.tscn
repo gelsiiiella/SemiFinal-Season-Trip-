@@ -1,11 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://ddc5gpxod2j4"]
+[gd_scene load_steps=14 format=3 uid="uid://ddc5gpxod2j4"]
 
-[ext_resource type="Script" path="res://main_game/World.gd" id="1_7axet"]
 [ext_resource type="PackedScene" uid="uid://c8hx5t3o022ng" path="res://road_generator.tscn" id="2_yho0j"]
 [ext_resource type="Script" path="res://main_game/Control.gd" id="4_d8ave"]
 [ext_resource type="FontFile" uid="uid://fjgdn06ebj4c" path="res://CarLock-lawX.ttf" id="5_harwm"]
+[ext_resource type="FontFile" uid="uid://c2o5wpeidrwo0" path="res://RoadSummerItalic-K71dW.ttf" id="5_odtr7"]
 [ext_resource type="PackedScene" uid="uid://djxwuwtpo3teh" path="res://main_game/car_move.tscn" id="5_uy6u3"]
 [ext_resource type="Script" path="res://main_game/HeartPy.gd" id="6_8v0n0"]
+[ext_resource type="Texture2D" uid="uid://bh33347nim1nh" path="res://pause_idle.png" id="7_i3lo2"]
+[ext_resource type="Texture2D" uid="uid://boh7bwgwow8tm" path="res://pause_pushed.png" id="8_5euvq"]
+[ext_resource type="Texture2D" uid="uid://c6pl4rjsciiee" path="res://replay.png" id="9_8l3pj"]
+[ext_resource type="FontFile" uid="uid://dm3m8dympmfw2" path="res://JdCodeRegular-A8Pg.ttf" id="9_r1kfk"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_yulgn"]
 
@@ -21,7 +25,6 @@ ambient_light_color = Color(0.423529, 0.698039, 0.941176, 1)
 
 [node name="MainGame" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473111, 0.907378, -0.306388)
-script = ExtResource("1_7axet")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sjway")
@@ -30,10 +33,10 @@ environment = SubResource("Environment_sjway")
 transform = Transform3D(1, 0, 0, 0, 0.422618, 0.906308, 0, -0.906308, 0.422618, 0.518971, 330.308, 0)
 
 [node name="road_generator" parent="." instance=ExtResource("2_yho0j")]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
 
 [node name="Car" parent="." instance=ExtResource("5_uy6u3")]
-transform = Transform3D(-0.00897098, -1.02446e-08, 0.99996, -0.45156, 0.892232, -0.00405109, -0.892195, -0.451579, -0.0080042, 0, 25.5216, -11.0601)
+transform = Transform3D(-0.00897098, -1.03583e-08, 0.99996, -0.191555, 0.981481, -0.00171849, -0.981441, -0.191563, -0.00880485, 0, 120.698, 11.4904)
 inertia = Vector3(363.64, 261.36, 420.45)
 
 [node name="Control" type="Control" parent="."]
@@ -48,6 +51,7 @@ offset_top = 15.0
 offset_right = 555.0
 offset_bottom = 60.0
 theme_override_colors/font_color = Color(1, 0.647059, 0, 1)
+theme_override_fonts/font = ExtResource("5_odtr7")
 theme_override_font_sizes/font_size = 30
 text = "Distance
 "
@@ -69,6 +73,7 @@ offset_right = 273.0
 offset_bottom = 60.0
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(1, 0.647059, 0, 1)
+theme_override_fonts/font = ExtResource("5_odtr7")
 theme_override_font_sizes/font_size = 30
 text = "Speed"
 
@@ -83,15 +88,6 @@ theme_override_font_sizes/font_size = 25
 
 [node name="Timer" type="Timer" parent="Control"]
 
-[node name="Button" type="TextureButton" parent="Control"]
-layout_mode = 0
-offset_left = 1044.0
-offset_top = 3.0
-offset_right = 1108.0
-offset_bottom = 67.0
-action_mode = 0
-button_mask = 0
-
 [node name="HeartPy" type="Node" parent="."]
 script = ExtResource("6_8v0n0")
 
@@ -101,6 +97,7 @@ offset_top = 18.0
 offset_right = 817.0
 offset_bottom = 63.0
 theme_override_colors/font_color = Color(1, 0.647059, 0, 1)
+theme_override_fonts/font = ExtResource("5_odtr7")
 theme_override_font_sizes/font_size = 30
 text = "Heart Rate
 "
@@ -120,5 +117,44 @@ theme_override_fonts/font = ExtResource("5_harwm")
 theme_override_font_sizes/font_size = 25
 
 [node name="Timer" type="Timer" parent="HeartPy"]
+
+[node name="Pause" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="pause" type="TextureButton" parent="Pause"]
+layout_mode = 0
+offset_left = 975.0
+offset_right = 1067.0
+offset_bottom = 92.0
+texture_normal = ExtResource("7_i3lo2")
+texture_pressed = ExtResource("8_5euvq")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+transparent_bg = true
+gui_snap_controls_to_pixels = false
+sdf_oversize = 0
+mode = 1
+title = "SEASON PAUSE"
+initial_position = 1
+size = Vector2i(500, 500)
+visible = true
+content_scale_size = Vector2i(2, 2)
+theme_override_fonts/font = ExtResource("9_r1kfk")
+theme_override_font_sizes/font_size = 16
+theme_override_icons/checked = ExtResource("9_8l3pj")
+hide_on_item_selection = false
+hide_on_checkable_item_selection = false
+submenu_popup_delay = 2.0
+item_count = 2
+item_0/text = "WELCOME TO MAIN GAME"
+item_0/id = 9
+item_0/separator = true
+item_1/text = ""
+item_1/id = 1
+
+[node name="TextureButton" type="TextureButton" parent="PopupMenu"]
+offset_right = 40.0
+offset_bottom = 40.0
 
 [connection signal="speed_changed" from="Control" to="road_generator" method="_on_control_speed_changed"]

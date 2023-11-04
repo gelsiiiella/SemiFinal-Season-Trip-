@@ -38,3 +38,5 @@ func _input(event):
 			keys_pressed = true
 		elif event.is_action_released("ui_up") or event.is_action_released("ui_down"):
 			keys_pressed = false
+
+

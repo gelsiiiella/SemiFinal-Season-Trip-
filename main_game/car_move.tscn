@@ -477,7 +477,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lntji")
 
 [node name="Car" type="VehicleBody3D"]
-transform = Transform3D(0.995821, 0.0913144, 0.00132655, -0.0912987, 0.995098, 0.0380173, 0.00215147, -0.0379795, 0.999276, -3.02862, 1.58534, 0.335126)
+transform = Transform3D(0.954978, 0.296675, 0, -0.296675, 0.954979, 0, 0, 0, 1, 1.1246, 0, 0)
 disable_mode = 2
 mass = 1000.0
 inertia = Vector3(659.09, 386.36, 420.45)
@@ -570,7 +570,9 @@ skeleton = NodePath("")
 script = ExtResource("2_j0xep")
 
 [node name="Camera3D" type="Camera3D" parent="CollisionShape3D/Sprite3D"]
-transform = Transform3D(10.7128, -0.288686, -0.987357, 0.905884, 5.33158, 8.26997, 0.326478, -10.156, 6.51173, -108.827, 767.45, -47.9821)
+transform = Transform3D(9.9899, -4.46767, 0.632121, 0.902309, 3.73862, 10.0015, -4.27881, -9.64245, 3.58494, 300, 400, 30)
+fov = 78.5
+near = 0.419
 
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(0.0442994, 0, -0.999018, 0, 1, 0, 0.999018, 0, 0.0442994, 2.38419e-07, 0.113872, -0.0942743)

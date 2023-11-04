@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://ctidgle7di3q4"]
+
+[ext_resource type="Texture2D" uid="uid://c6pl4rjsciiee" path="res://replay.png" id="1_8x4wl"]
+[ext_resource type="Texture2D" uid="uid://1g8d1mpkiwkr" path="res://pause_bg.png" id="1_x6rsw"]
+[ext_resource type="Texture2D" uid="uid://dsqsj7ft24sfv" path="res://learn.png" id="2_kcwdt"]
+[ext_resource type="Texture2D" uid="uid://ddgvs5sjjd165" path="res://quit.png" id="3_tafcs"]
+[ext_resource type="Texture2D" uid="uid://dkyaau3aek2jj" path="res://Pixel Buttons/Cross_Idle.png" id="5_co162"]
+[ext_resource type="Texture2D" uid="uid://cw0b1t2k4ph6m" path="res://Pixel Buttons/Cross_Pushed.png" id="6_1n6j4"]
+
+[node name="Pause_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.733333)
+self_modulate = Color(0.211765, 0.254902, 0.278431, 1)
+layout_mode = 0
+offset_left = 234.0
+offset_top = 92.0
+offset_right = 1024.0
+offset_bottom = 566.0
+texture = ExtResource("1_x6rsw")
+expand_mode = 1
+
+[node name="replay" type="TextureRect" parent="Panel"]
+layout_mode = 2
+offset_left = 281.0
+offset_top = 156.0
+offset_right = 530.0
+offset_bottom = 206.0
+texture = ExtResource("1_8x4wl")
+
+[node name="learn" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 218.0
+offset_right = 526.0
+offset_bottom = 268.0
+texture = ExtResource("2_kcwdt")
+
+[node name="quit" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 280.0
+offset_right = 517.0
+offset_bottom = 330.0
+texture = ExtResource("3_tafcs")
+
+[node name="cancel" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 733.0
+offset_top = -20.0
+offset_right = 797.0
+offset_bottom = 44.0
+texture_normal = ExtResource("5_co162")
+texture_pressed = ExtResource("6_1n6j4")
