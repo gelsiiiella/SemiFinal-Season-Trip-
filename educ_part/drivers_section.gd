@@ -10,8 +10,10 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_next_pressed():
-	get_tree().change_scene_to_file("res://educ_part/traffic_signs_section.tscn")
 
 func _on_previous_pressed():
+	get_tree().change_scene_to_file("res://educ_part/traffic_signs_section.tscn")
+
+
+func _on_next_pressed():
 	get_tree().change_scene_to_file("res://educ_part/information_part.tscn")
