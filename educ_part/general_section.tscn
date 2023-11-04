@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnc7cdkef3ror"]
+
+[ext_resource type="Texture2D" uid="uid://cw1cggks8wn51" path="res://general_section_bg.png" id="1_jdy6x"]
+[ext_resource type="Script" path="res://educ_part/general_section.gd" id="1_nqibt"]
+[ext_resource type="Texture2D" uid="uid://cbsjkfmd8ea6d" path="res://Pixel Buttons/Previous_Idle.png" id="2_5afmf"]
+[ext_resource type="Texture2D" uid="uid://3buji45wii8j" path="res://Pixel Buttons/Previous_Pushed.png" id="3_aurnp"]
+[ext_resource type="Texture2D" uid="uid://bugqqb4rewsca" path="res://Pixel Buttons/Next_Idle.png" id="4_yvkwn"]
+[ext_resource type="Texture2D" uid="uid://bkur2w1rs0b5e" path="res://Pixel Buttons/Next_Pushed.png" id="5_gsny8"]
+
+[node name="general_section" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nqibt")
+
+[node name="general_bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1270.0
+offset_bottom = 714.0
+texture = ExtResource("1_jdy6x")
+expand_mode = 1
+
+[node name="previous" type="TextureButton" parent="general_bg"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.05
+anchor_bottom = 0.134
+offset_left = 26.0
+offset_top = 530.0
+offset_right = 78.5
+offset_bottom = 690.324
+texture_normal = ExtResource("2_5afmf")
+texture_pressed = ExtResource("3_aurnp")
+
+[node name="next" type="TextureButton" parent="general_bg"]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 528.0
+offset_right = 1072.0
+offset_bottom = 680.0
+texture_normal = ExtResource("4_yvkwn")
+texture_pressed = ExtResource("5_gsny8")
+
+[connection signal="pressed" from="general_bg/next" to="." method="_on_next_pressed"]
